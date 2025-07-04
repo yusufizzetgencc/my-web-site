@@ -22,10 +22,12 @@ export async function generateMetadata(context: {
 
   return {
     title: blog.title,
-    description: he.decode(blog.content.slice(0, 150)),
+    description: he.decode(blog.content.replace(/<[^>]+>/g, "").slice(0, 150)),
     openGraph: {
       title: blog.title,
-      description: he.decode(blog.content.slice(0, 150)),
+      description: he.decode(
+        blog.content.replace(/<[^>]+>/g, "").slice(0, 150)
+      ),
       url: `https://yusufizzetgenc.com/blog/${blog.slug}`,
       images: [
         {
@@ -38,7 +40,9 @@ export async function generateMetadata(context: {
     twitter: {
       card: "summary_large_image",
       title: blog.title,
-      description: he.decode(blog.content.slice(0, 150)),
+      description: he.decode(
+        blog.content.replace(/<[^>]+>/g, "").slice(0, 150)
+      ),
       images: [blog.thumbnail],
     },
   };
