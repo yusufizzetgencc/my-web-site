@@ -4,7 +4,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header/Header";
 import Footer from "@/components/layout/footer/Footer";
-import SessionWrapper from "@/components/providers/SessionWrapper";
 import { Toaster } from "sonner";
 
 const geistSans = Geist({
@@ -39,14 +38,14 @@ export default function RootLayout({
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
-        <SessionWrapper>
+        <>
           <div className="min-h-screen flex flex-col justify-between text-white">
             <Header />
             <main className="flex-1 pt-16">{children}</main>
             <Footer />
           </div>
           <Toaster richColors />
-        </SessionWrapper>
+        </>
       </body>
     </html>
   );

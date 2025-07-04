@@ -1,6 +1,5 @@
 import { blogs as staticBlogs } from "../blog-data";
 import { notFound } from "next/navigation";
-import { prisma } from "@/lib/db";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,12 +16,7 @@ export async function generateMetadata(context: {
 }): Promise<Metadata> {
   const { slug } = await context.params;
 
-  const blog =
-    (await prisma.blogPost.findUnique({
-      where: { slug },
-    })) ??
-    staticBlogs.find((b) => b.slug === slug) ??
-    null;
+  const blog = staticBlogs.find((b) => b.slug === slug) ?? null;
 
   if (!blog) return {};
 
@@ -39,49 +33,13 @@ export default async function Page({
 }) {
   const { slug } = await params;
 
-  let blog:
-    | ({
-        user: {
-          id: string;
-          firstName: string;
-          lastName: string;
-          username: string;
-          email: string;
-          password: string;
-          avatar: string | null;
-          createdAt: Date;
-        };
-      } & {
-        id: string;
-        title: string;
-        slug: string;
-        category: string;
-        thumbnail: string;
-        content: string;
-        createdAt: Date;
-        updatedAt: Date;
-      })
-    | (typeof staticBlogs)[number]
-    | null = await prisma.blogPost.findUnique({
-    where: { slug },
-    include: { user: true },
-  });
+  const blog = staticBlogs.find((b) => b.slug === slug) ?? null;
 
   if (!blog) {
-    blog = staticBlogs.find((b) => b.slug === slug) ?? null;
-    if (!blog) return notFound();
+    return notFound();
   }
 
-  let otherBlogs = [];
-  try {
-    otherBlogs = await prisma.blogPost.findMany({
-      where: { NOT: { slug } },
-      take: 4,
-      orderBy: { createdAt: "desc" },
-    });
-  } catch {
-    otherBlogs = staticBlogs.filter((b) => b.slug !== slug).slice(0, 4);
-  }
+  const otherBlogs = staticBlogs.filter((b) => b.slug !== slug).slice(0, 4);
 
   return (
     <main className="mt-5 max-w-4xl mx-auto px-4 py-12 bg-white rounded-lg shadow-md">
@@ -154,12 +112,7 @@ export default async function Page({
               d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25a8.25 8.25 0 1115 0H4.5z"
             />
           </svg>
-          <span>
-            Yazar:{" "}
-            {"user" in blog
-              ? `${blog.user.firstName} ${blog.user.lastName}`
-              : "Yusuf İzzet Genç"}
-          </span>
+          <span>Yazar: Yusuf İzzet Genç</span>
         </div>
         <div className=" flex items-center gap-2">
           <svg
@@ -192,7 +145,7 @@ export default async function Page({
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {otherBlogs.map((item) => (
             <Link
-              key={item.id}
+              key={item.slug}
               href={`/blog/${item.slug}`}
               className="block border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition duration-300 bg-white"
             >
