@@ -197,4 +197,48 @@ export const blogs = [
     `,
     createdAt: "2025-06-23T17:15:00.000Z",
   },
+  {
+    title: "Yapay Zeka Nedir? Kullanım Alanları ve Geleceği",
+    slug: "yapay-zeka-nedir",
+    description:
+      "Yapay zeka nedir, hangi alanlarda kullanılır ve gelecekte bizi neler bekliyor? Bu yazımızda yapay zekanın tanımı, örnekleri ve etkilerini detaylıca inceledik.",
+    content: `
+    <h2>Yapay Zeka Nedir?</h2>
+    <p>
+    Yapay zeka (AI), insan zekasını taklit eden ve öğrenme, problem çözme, karar verme gibi bilişsel işlevleri gerçekleştirebilen sistemlerin genel adıdır. 
+    Bu sistemler genellikle veri analizi, örüntü tanıma ve otomatik karar verme yeteneklerine sahiptir.
+    </p>
+
+    <h2>Yapay Zeka Hangi Alanlarda Kullanılır?</h2>
+    <ul>
+      <li><strong>Sağlık:</strong> Hastalık teşhisi, ilaç geliştirme, kişisel sağlık takibi</li>
+      <li><strong>Finans:</strong> Risk analizi, dolandırıcılık tespiti, yatırım önerileri</li>
+      <li><strong>Perakende:</strong> Kişiselleştirilmiş ürün önerileri, stok yönetimi</li>
+      <li><strong>Otomotiv:</strong> Otonom araçlar, sürücü destek sistemleri</li>
+      <li><strong>Eğitim:</strong> Akıllı öğrenme sistemleri, öğrenci performans analizi</li>
+    </ul>
+
+    <h2>Yapay Zekanın Avantajları</h2>
+    <p>
+    - Hızlı ve doğru karar alma<br />
+    - Maliyet azaltımı<br />
+    - Zaman tasarrufu<br />
+    - Kişiselleştirilmiş hizmetler sunma
+    </p>
+
+    <h2>Yapay Zeka Gelecekte Nereye Gidiyor?</h2>
+    <p>
+    2025 ve sonrası için yapay zekanın iş gücünü dönüştüreceği, daha fazla alanda karar destek sistemleri haline geleceği öngörülüyor. 
+    Ancak etik ve gizlilik konuları da büyük önem kazanacak.
+    </p>
+
+    <h2>Sonuç</h2>
+    <p>
+    Yapay zeka günümüzde hayatımızın birçok alanında yer alıyor ve her geçen gün gelişiyor. 
+    Eğer bu konuda güncel kalmak ve fırsatları kaçırmamak istiyorsanız yapay zekayı öğrenmeye bugünden başlamalısınız.
+    </p>
+  `,
+    thumbnail: "/Blog-images/1.png", // varsa
+    createdAt: "2025-07-05T00:00:00.000Z",
+  },
 ];
