@@ -20,7 +20,7 @@ export const authOptions: NextAuthOptions = {
           throw new Error("Tüm alanlar zorunludur");
         }
 
-        const user = await prisma.user.findFirst({
+        const user = await prisma.blogUser.findFirst({
           where: {
             OR: [
               { email: credentials.usernameOrEmail.toLowerCase() },

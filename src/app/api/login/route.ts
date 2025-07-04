@@ -16,7 +16,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const user = await prisma.user.findFirst({
+    const user = await prisma.blogUser.findFirst({
       where: {
         OR: [
           { email: usernameOrEmail?.toLowerCase() },

@@ -1,11 +1,10 @@
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/authOptions";
-import { prisma } from "@/lib/db";
+import prisma from "@/lib/prismadb";
 import { BlogCategory } from "@prisma/client";
 import { z } from "zod";
 
-// Zod schema for validation
 const blogSchema = z.object({
   title: z.string().min(1, "Başlık zorunludur."),
   content: z.string().min(1, "İçerik zorunludur."),
@@ -36,10 +35,6 @@ export async function POST(req: Request) {
     const parsed = blogSchema.safeParse(json);
 
     if (!parsed.success) {
-      console.error(
-        "[BLOG_CREATE_VALIDATION_ERROR]",
-        parsed.error.flatten().fieldErrors
-      );
       return NextResponse.json(
         { error: parsed.error.flatten().fieldErrors },
         { status: 400 }
@@ -48,7 +43,7 @@ export async function POST(req: Request) {
 
     const { title, content, category, thumbnail } = parsed.data;
 
-    const user = await prisma.user.findUnique({
+    const user = await prisma.blogUser.findUnique({
       where: { email: session.user.email },
     });
 
@@ -70,7 +65,7 @@ export async function POST(req: Request) {
 
     const slug = generateSlug(title);
 
-    const blog = await prisma.blog.create({
+    const blog = await prisma.blogPost.create({
       data: {
         title,
         content,
@@ -83,10 +78,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json(blog, { status: 201 });
   } catch (error: unknown) {
-    console.error(
-      "[BLOG_CREATE_ERROR]",
-      error instanceof Error ? error.message : String(error)
-    );
+    console.error("[BLOG_CREATE_ERROR]", error);
     return NextResponse.json(
       { error: "Sunucu hatası oluştu." },
       { status: 500 }

@@ -17,7 +17,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const existingUser = await prisma.user.findFirst({
+    const existingUser = await prisma.blogUser.findFirst({
       where: {
         OR: [
           { username: username.toLowerCase() },
@@ -46,7 +46,7 @@ export async function POST(req: Request) {
       avatarUrl = avatar;
     }
 
-    const user = await prisma.user.create({
+    const user = await prisma.blogUser.create({
       data: {
         firstName: firstName.trim(),
         lastName: lastName.trim(),

@@ -18,7 +18,7 @@ export async function generateMetadata(context: {
   const { slug } = await context.params;
 
   const blog =
-    (await prisma.blog.findUnique({
+    (await prisma.blogPost.findUnique({
       where: { slug },
     })) ??
     staticBlogs.find((b) => b.slug === slug) ??
@@ -62,7 +62,7 @@ export default async function Page({
         updatedAt: Date;
       })
     | (typeof staticBlogs)[number]
-    | null = await prisma.blog.findUnique({
+    | null = await prisma.blogPost.findUnique({
     where: { slug },
     include: { user: true },
   });
@@ -74,7 +74,7 @@ export default async function Page({
 
   let otherBlogs = [];
   try {
-    otherBlogs = await prisma.blog.findMany({
+    otherBlogs = await prisma.blogPost.findMany({
       where: { NOT: { slug } },
       take: 4,
       orderBy: { createdAt: "desc" },

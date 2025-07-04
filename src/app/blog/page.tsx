@@ -11,7 +11,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 
 const BlogPage = async () => {
   const session = await getServerSession(authOptions);
-  const dynamicBlogs = await prisma.blog.findMany({
+  const dynamicBlogs = await prisma.blogPost.findMany({
     orderBy: { createdAt: "desc" },
   });
 
