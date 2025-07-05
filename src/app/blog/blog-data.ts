@@ -714,4 +714,129 @@ export const blogs = [
     </p>
   `,
   },
+  {
+    id: "21",
+    title:
+      "Hangi Yazılım Diliyle Başlamalıyım? Yazılıma Yeni Başlayanlar İçin Kapsamlı Rehber (2025)",
+    slug: "hangi-yazilim-diliyle-baslamaliyim-2025",
+    category: "SOFTWARE",
+    description:
+      "Yazılıma yeni başlayanlar için 2025 yılına özel en güncel ve kapsamlı dil seçme rehberi. Hangi dili öğrenmeliyim, hangi alan bana uygun? Cevaplar bu blogda!",
+    keywords: [
+      "hangi yazılım dili öğrenilmeli",
+      "yazılıma nasıl başlanır",
+      "yeni başlayanlar için yazılım",
+      "2025 yazılım trendleri",
+      "yazılım alanları",
+      "yazılım dilleri karşılaştırma",
+      "yazılım öğrenme rehberi",
+      "frontend backend mobil ai",
+    ],
+    thumbnail: "/images/HangiYazilim.png",
+    createdAt: "2025-07-05T12:30:00.000Z",
+    content: `
+    <h2 style="color:#002133;">🎯 Neden Yazılım Öğrenmelisin?</h2>
+    <p style="color:#333;">
+      Yazılım artık sadece mühendislerin değil; girişimcilerin, öğretmenlerin, tasarımcıların, analistlerin bile kullandığı evrensel bir beceri haline geldi. 
+      Yapay zekadan mobil uygulamalara, oyunlardan veri analizine kadar her yerde yazılım var. Geleceği şekillendiren teknolojinin kalbinde olmak istiyorsan, yazılıma başlamak kaçınılmaz.
+    </p>
+
+    <h2 style="color:#002133;">🧭 İlk Adım: Yazılım Alanlarını Tanımak</h2>
+    <p style="color:#333;">Yazılıma başlamadan önce hangi alanda ilerlemek istediğini bilmek çok önemlidir. İşte popüler alanlar ve kullandıkları teknolojiler:</p>
+
+    <ul style="color:#333;">
+      <li><strong>Web Geliştirme:</strong> HTML, CSS, JavaScript, React, Next.js</li>
+      <li><strong>Mobil Uygulama:</strong> Swift, Kotlin, Flutter, React Native</li>
+      <li><strong>Yapay Zeka / Makine Öğrenimi:</strong> Python, TensorFlow, PyTorch</li>
+      <li><strong>Veri Bilimi:</strong> Python, R, SQL, Power BI</li>
+      <li><strong>Siber Güvenlik:</strong> Python, C++, Bash</li>
+      <li><strong>Oyun Geliştirme:</strong> C# (Unity), C++ (Unreal), Lua</li>
+      <li><strong>Masaüstü Uygulamalar:</strong> Java, C#, Electron</li>
+      <li><strong>DevOps ve Bulut:</strong> Docker, Kubernetes, AWS, Bash</li>
+      <li><strong>Gömülü Sistemler / IoT:</strong> C, C++, Rust</li>
+      <li><strong>Test ve Otomasyon:</strong> Jest, Selenium, PyTest</li>
+    </ul>
+
+    <h2 style="color:#002133;">🔍 Hangi Yazılım Diliyle Başlamalıyım?</h2>
+    <table style="width:100%;border-collapse:collapse;">
+      <thead style="background-color:#002133;color:white;">
+        <tr>
+          <th style="padding:10px;">Hedef</th>
+          <th style="padding:10px;">Başlangıç Dili</th>
+          <th style="padding:10px;">Neden?</th>
+        </tr>
+      </thead>
+      <tbody style="color:#333;">
+        <tr>
+          <td style="padding:10px;">Genel yazılım mantığı</td>
+          <td style="padding:10px;"><strong>Python</strong></td>
+          <td style="padding:10px;">Kolay sözdizimi, geniş kullanım</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Web geliştirme</td>
+          <td style="padding:10px;"><strong>JavaScript</strong></td>
+          <td style="padding:10px;">Hem frontend hem backend için</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Mobil geliştirme</td>
+          <td style="padding:10px;"><strong>Dart (Flutter)</strong></td>
+          <td style="padding:10px;">Tek kodla çok platform</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Veri bilimi / AI</td>
+          <td style="padding:10px;"><strong>Python</strong></td>
+          <td style="padding:10px;">Kütüphane zenginliği</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Oyun geliştirme</td>
+          <td style="padding:10px;"><strong>C# (Unity)</strong></td>
+          <td style="padding:10px;">Popüler motor ve topluluk</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;">Sistem düzeyi işler</td>
+          <td style="padding:10px;"><strong>C / C++</strong></td>
+          <td style="padding:10px;">Performans ve donanım erişimi</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 style="color:#002133;">📈 2025'te Popüler Yazılım Dilleri</h2>
+    <ul style="color:#333;">
+      <li><strong>Python:</strong> Veri bilimi, AI, web</li>
+      <li><strong>JavaScript / TypeScript:</strong> Web, mobil, frontend</li>
+      <li><strong>Go:</strong> Mikroservisler, hızlı sistemler</li>
+      <li><strong>Rust:</strong> Sistem güvenliği ve performans</li>
+      <li><strong>Kotlin:</strong> Modern Android uygulamaları</li>
+      <li><strong>Java:</strong> Kurumsal projeler, Android</li>
+    </ul>
+
+    <h2 style="color:#002133;">🗺️ Web Geliştirici İçin Yol Haritası</h2>
+    <ol style="color:#333;">
+      <li>HTML – CSS öğren</li>
+      <li>JavaScript öğren</li>
+      <li>Basit projeler yap</li>
+      <li>Git ve GitHub öğren</li>
+      <li>React öğren</li>
+      <li>Node.js ile backend</li>
+      <li>MongoDB veya MySQL</li>
+      <li>Full stack proje geliştir</li>
+      <li>Portföy sitesi hazırla</li>
+      <li>Freelance veya staj başvurusu yap</li>
+    </ol>
+
+    <h2 style="color:#002133;">🎁 Sonuç ve Öneriler</h2>
+    <ul style="color:#333;">
+      <li>Tek bir dili öğrenip derinleş, sonra diğerlerine geç</li>
+      <li>Bol bol proje üret, uygulamalı öğren</li>
+      <li>Topluluklara katıl: GitHub, StackOverflow, Discord</li>
+      <li>Her zaman soru sor, araştır, öğrenmeye devam et</li>
+    </ul>
+
+    <h2 style="color:#002133;">✨ Son Söz: Bugün Başla!</h2>
+    <p style="color:#333;">
+      Ne öğrenirsen öğren, en kritik adım: <strong>bugün başlamak</strong>. 
+      Küçük bir uygulama, tek bir satır kod bile senin geleceğini şekillendirebilir. Yazılım, seni çok farklı dünyalara götürebilir.
+    </p>
+    `,
+  },
 ];
