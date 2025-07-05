@@ -42,10 +42,10 @@ export default function AboutIntro() {
           </p>
 
           {/* Teknoloji Kaydırıcısı */}
-          <div className="absolute bottom-[-60] right-[-30] mt-6 w-56 overflow-hidden whitespace-nowrap">
+          <div className="absolute bottom-[-60] right-[-30] mt-6 w-56 overflow-hidden whitespace-nowrap ">
             <div className="inline-flex gap-4 animate-slide-horizontal-lg w-max px-4 py-2 bg-[#1E293B] rounded-lg shadow-inner">
               {[...Array(3)].map((_, index) => (
-                <div key={index} className="flex gap-4 text-xl">
+                <div key={index} className="flex gap-4 text-xl sm">
                   <FaHtml5 className="text-orange-500 hover:scale-125 transition duration-300" />
                   <FaCss3Alt className="text-blue-500 hover:scale-125 transition duration-300" />
                   <FaJsSquare className="text-yellow-300 hover:scale-125 transition duration-300" />

@@ -1,244 +1,717 @@
 export const blogs = [
   {
     id: "1",
-    title: "Yapay Zeka Gündelik Hayatımızı Nasıl Değiştiriyor?",
-    slug: "yapay-zeka-gundelik-hayat",
-    category: "AI",
+    title: "Yapay Zeka Nedir? Kullanım Alanları ve Geleceği",
+    slug: "yapay-zeka-nedir",
+    category: "TECHNOLOGY",
+    description:
+      "Yapay zeka nedir, hangi alanlarda kullanılır ve gelecekte bizi neler bekliyor? Bu yazımızda yapay zekanın tanımı, örnekleri ve etkilerini detaylıca inceledik.",
+    keywords: [
+      "yapay zeka nedir",
+      "ai nedir",
+      "yapay zeka kullanım alanları",
+      "yapay zeka avantajları",
+      "2025 yapay zeka",
+      "gelecekte yapay zeka",
+      "ai trendleri",
+    ],
     thumbnail: "/Blog-images/1.png",
+    createdAt: "2025-07-05T00:00:00.000Z",
     content: `
-      &lt;h2 style="color:#002133;"&gt;Yapay Zekanın Günlük Yaşamdaki Yeri&lt;/h2&gt;
-      &lt;p style="color:#333;"&gt;Yapay zeka, artık sadece bilim kurgu senaryolarında değil, günlük hayatımızda da aktif rol alıyor. Özellikle sesli asistanlar, öneri sistemleri ve otomatik çeviri araçları gibi hizmetlerle her an karşımıza çıkıyor.&lt;/p&gt;
-      &lt;ul style="color:#333;"&gt;
-        &lt;li&gt;Ev asistanları (Google Assistant, Alexa)&lt;/li&gt;
-        &lt;li&gt;Sağlıkta erken teşhis sistemleri&lt;/li&gt;
-        &lt;li&gt;Finansta otomatik yatırım algoritmaları&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;h3 style="color:#002133;"&gt;Gelecekte Bizi Neler Bekliyor?&lt;/h3&gt;
-      &lt;p style="color:#002133;"&gt;&lt;strong&gt;Peki ya bu değişim nereye gidiyor?&lt;/strong&gt; Yapay zeka daha akıllı, daha hızlı ve daha yaygın hale geliyor. Önümüzdeki yıllarda birçok mesleği dönüştürecek gibi görünüyor.&lt;/p&gt;
-      &lt;p style="color:#333;"&gt;Ayrıca eğitimden ulaşıma, sanattan ticarete kadar birçok sektörde yapay zekanın etkilerini hissetmeye devam edeceğiz.&lt;/p&gt;
+      <h2>Yapay Zeka Nedir?</h2>
+      <p>
+        Yapay zeka (AI), insan zekasını taklit eden ve öğrenme, problem çözme, karar verme gibi bilişsel işlevleri gerçekleştirebilen sistemlerin genel adıdır. 
+        Bu sistemler genellikle veri analizi, örüntü tanıma ve otomatik karar verme yeteneklerine sahiptir.
+      </p>
+
+      <h2>Yapay Zeka Hangi Alanlarda Kullanılır?</h2>
+      <ul>
+        <li><strong>Sağlık:</strong> Hastalık teşhisi, ilaç geliştirme, kişisel sağlık takibi</li>
+        <li><strong>Finans:</strong> Risk analizi, dolandırıcılık tespiti, yatırım önerileri</li>
+        <li><strong>Perakende:</strong> Kişiselleştirilmiş ürün önerileri, stok yönetimi</li>
+        <li><strong>Otomotiv:</strong> Otonom araçlar, sürücü destek sistemleri</li>
+        <li><strong>Eğitim:</strong> Akıllı öğrenme sistemleri, öğrenci performans analizi</li>
+      </ul>
+
+      <h2>Yapay Zekanın Avantajları</h2>
+      <p>
+        - Hızlı ve doğru karar alma<br />
+        - Maliyet azaltımı<br />
+        - Zaman tasarrufu<br />
+        - Kişiselleştirilmiş hizmetler sunma
+      </p>
+
+      <h2>Yapay Zeka Gelecekte Nereye Gidiyor?</h2>
+      <p>
+        2025 ve sonrası için yapay zekanın iş gücünü dönüştüreceği, daha fazla alanda karar destek sistemleri haline geleceği öngörülüyor. 
+        Ancak etik ve gizlilik konuları da büyük önem kazanacak.
+      </p>
+
+      <h2>Sonuç</h2>
+      <p>
+        Yapay zeka günümüzde hayatımızın birçok alanında yer alıyor ve her geçen gün gelişiyor. 
+        Eğer bu konuda güncel kalmak ve fırsatları kaçırmamak istiyorsanız yapay zekayı öğrenmeye bugünden başlamalısınız.
+      </p>
     `,
-    createdAt: "2025-07-04T10:00:00.000Z",
   },
   {
     id: "2",
-    title: "2025'te Yazılım Öğrenmenin En Etkili Yolları",
-    slug: "2025te-yazilim-ogrenme",
-    category: "SOFTWARE",
+    title:
+      "Generative AI ile Kod Yazmanın Geleceği: Yazılım Geliştirmede Yeni Dönem",
+    slug: "generative-ai-ile-kod-yazma",
+    category: "TECHNOLOGY",
+    description:
+      "Generative AI, GitHub Copilot ve vibe coding gibi yapay zeka destekli sistemlerle yazılım geliştirme süreçlerinde neler değişiyor? 2025 trendlerini keşfedin.",
+    keywords: [
+      "generative ai nedir",
+      "ai ile kod yazma",
+      "vibe coding ne demek",
+      "github copilot nasıl çalışır",
+      "yapay zeka yazılım geliştirme",
+      "doğal dil ile kod üretme",
+      "2025 yazılım trendleri",
+    ],
     thumbnail: "/Blog-images/2.png",
+    createdAt: "2025-07-05T12:00:00.000Z",
     content: `
-      &lt;h2 style="color:#002133;"&gt;2025'te Yazılım Öğrenmenin En Etkili Yöntemleri&lt;/h2&gt;
-      &lt;p style="color:#333;"&gt;Yazılım öğrenmek isteyenler için kaynak bolluğu kafa karıştırıcı olabilir. Doğru stratejiyle kısa sürede büyük yol kat edebilirsiniz.&lt;/p&gt;
-      &lt;h3 style="color:#002133;"&gt;Başarılı Olmak İçin İpuçları:&lt;/h3&gt;
-      &lt;ul style="color:#333;"&gt;
-        &lt;li&gt;Hedef belirleyin ve hangi dili öğrenmek istediğinize karar verin.&lt;/li&gt;
-        &lt;li&gt;Kısa aralıklarla ve düzenli tekrar yaparak öğrenin.&lt;/li&gt;
-        &lt;li&gt;Projelerle pratik yapın ve öğrendiklerinizi uygulayın.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;p style="color:#002133;"&gt;&lt;strong&gt;Ücretsiz kaynaklar:&lt;/strong&gt; freeCodeCamp, Codecademy, Udemy'nin ücretsiz kursları ve YouTube kanalları.&lt;/p&gt;
-      &lt;p style="color:#333;"&gt;Unutmayın, yazılım öğrenmek bir maraton. Sabırlı olun ve sürecin tadını çıkarın!&lt;/p&gt;
+      <h2 style="color:#002133;">Generative AI ile Kod Yazmanın Geleceği</h2>
+      <p style="color:#333;">
+        <strong>Generative AI</strong>, yazılım geliştirme dünyasında çığır açıyor. 
+        <strong>Yapay zeka destekli kodlama</strong> araçları, özellikle <strong>GitHub Copilot</strong> gibi çözümlerle, yazılımcıların üretkenliğini artırıyor ve geleneksel kodlama süreçlerini dönüştürüyor.
+      </p>
+
+      <h2 style="color:#002133;">Yazılım Geliştirmede AI'nın Rolü</h2>
+      <p style="color:#333;">
+        2025 itibarıyla, "vibe coding" olarak adlandırılan yeni yaklaşım; geliştiricilerin doğal dil açıklamalarıyla yazılım oluşturmasını sağlıyor. 
+        <a href="https://sunbytes.io/blog/top-software-development-trends-2025/" target="_blank" rel="noopener noreferrer">Andrej Karpathy</a>'nin desteklediği bu sistem sayesinde artık kod yazmak daha erişilebilir ve hızlı.
+      </p>
+
+      <ul style="color:#333;">
+        <li>Yapay zeka ile <strong>otomatik kod tamamlama</strong></li>
+        <li>Doğal dilden koda geçiş (Prompt-to-Code)</li>
+        <li>Yazılım testlerinin otomatikleştirilmesi</li>
+        <li>Hata tespiti ve öneri sistemleri</li>
+      </ul>
+
+      <h2 style="color:#002133;">Avantajlar</h2>
+      <p style="color:#333;">
+        - Daha hızlı proje geliştirme<br/>
+        - Yeni başlayanlar için kolay öğrenme süreci<br/>
+        - Karmaşık kod bloklarının otomatik oluşturulması<br/>
+        - Daha az hata, daha fazla üretkenlik
+      </p>
+
+      <h2 style="color:#002133;">Gelecekte Bizi Neler Bekliyor?</h2>
+      <p style="color:#333;">
+        <strong>Generative AI</strong> sistemleri, yazılım ekiplerinde birer <em>“yapay zeka yardımcıları”</em> olarak görev alacak. 
+        İş gücü dönüşümü hızlanacak ve geleneksel yazılım rolleri evrim geçirecek. Ancak, etik kurallar ve veri güvenliği bu süreçte önemli bir rol oynayacak.
+      </p>
+
+      <h2 style="color:#002133;">Sonuç</h2>
+      <p style="color:#333;">
+        Eğer yazılım dünyasında yer almak istiyorsanız, <strong>AI ile kodlama</strong> trendlerine hâkim olmak artık bir gereklilik. 
+        Geleceğin yazılımcıları, yalnızca kod yazan değil; yapay zekayı eğiten, yöneten ve birlikte çalışan bireyler olacak.
+      </p>
     `,
-    createdAt: "2025-07-03T15:00:00.000Z",
   },
   {
     id: "3",
-    title: "Sıfırdan Web Sitesi Kurmak İçin 7 Adım",
-    slug: "sifirdan-web-sitesi",
+    title: "Yazılımda Low-Code & No-Code Platformların Yükselişi",
+    slug: "low-code-no-code-yukselisi",
     category: "TECHNOLOGY",
+    description:
+      "Low-code ve no-code platformlar 2025'te yazılım geliştirmeyi nasıl değiştiriyor? Kod yazmadan uygulama geliştirmenin avantajlarını keşfedin.",
+    keywords: [
+      "low-code nedir",
+      "no-code platformlar",
+      "kod yazmadan yazılım",
+      "bubble.io nasıl çalışır",
+      "2025 yazılım trendleri",
+      "yazılımda verimlilik",
+    ],
     thumbnail: "/Blog-images/3.png",
+    createdAt: "2025-07-05T13:00:00.000Z",
     content: `
-      &lt;h2 style="color:#002133;"&gt;Sıfırdan Web Sitesi Kurmanın 7 Adımı&lt;/h2&gt;
-      &lt;p style="color:#333;"&gt;Kod bilmeseniz bile kendi web sitenizi kolayca kurabilirsiniz. Aşağıdaki adımları takip ederek profesyonel bir siteye sahip olabilirsiniz:&lt;/p&gt;
-      &lt;ol style="color:#333;"&gt;
-        &lt;li&gt;Alan adı seçimi: Akılda kalıcı ve kısa bir isim bulun.&lt;/li&gt;
-        &lt;li&gt;Hosting hizmeti alın: Güvenilir bir sağlayıcı tercih edin.&lt;/li&gt;
-        &lt;li&gt;Web sitesi platformu seçin: WordPress, Wix veya Squarespace gibi.&lt;/li&gt;
-        &lt;li&gt;Tema ve tasarım ayarlarını yapın.&lt;/li&gt;
-        &lt;li&gt;İçeriklerinizi ekleyin.&lt;/li&gt;
-        &lt;li&gt;SEO ayarlarını uygulayın.&lt;/li&gt;
-        &lt;li&gt;Siteyi yayına alın ve test edin.&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;p style="color:#002133;"&gt;&lt;strong&gt;İpucu:&lt;/strong&gt; Tasarım araçlarını kullanarak sitenizi kişiselleştirin ve ziyaretçilerin ilgisini çekin.&lt;/p&gt;
+      <h2>Low-Code ve No-Code Nedir?</h2>
+      <p>Low-code ve no-code platformlar, az ya da hiç kod yazmadan uygulama geliştirmeye olanak tanıyan araçlardır.</p>
+      <ul>
+        <li><strong>Low-Code:</strong> Teknik kullanıcılar için daha az kodla hızlı geliştirme</li>
+        <li><strong>No-Code:</strong> Kod bilgisi olmayanlar için tamamen görsel geliştirme</li>
+      </ul>
+      <h2>Popüler Platformlar</h2>
+      <p>Bubble, Webflow, OutSystems ve Glide gibi araçlar 2025'te oldukça yaygın kullanılmakta.</p>
+      <h2>Avantajlar</h2>
+      <p>- Hızlı prototip geliştirme<br/>- Maliyet tasarrufu<br/>- Ekip bağımsızlığı</p>
+      <h2>Kimler Kullanmalı?</h2>
+      <p>Girişimciler, startuplar ve teknik olmayan ürün yöneticileri için idealdir.</p>
     `,
-    createdAt: "2025-06-30T12:00:00.000Z",
   },
   {
     id: "4",
-    title: "En Çok Tercih Edilen Programlama Dilleri 2025",
-    slug: "2025-programlama-dilleri",
-    category: "SOFTWARE_ENGINEERING",
+    title: "2025’te Yazılım Geliştiriciler için En İyi AI Araçları",
+    slug: "yazilim-gelistirme-ai-araclari-2025",
+    category: "TECHNOLOGY",
+    description:
+      "2025 yılında yazılım geliştiricilerin en çok kullandığı yapay zeka destekli araçlar ve işlevleri nelerdir? GitHub Copilot’tan Tabnine’a kadar derledik.",
+    keywords: [
+      "ai yazılım araçları 2025",
+      "copilot alternatifi",
+      "tabnine nedir",
+      "ai destekli kodlama",
+      "yazılımcı için ai",
+      "yapay zeka ile programlama",
+    ],
     thumbnail: "/Blog-images/4.png",
+    createdAt: "2025-07-05T13:15:00.000Z",
     content: `
-      &lt;h2 style="color:#002133;"&gt;2025'te En Çok Tercih Edilen Programlama Dilleri&lt;/h2&gt;
-      &lt;p style="color:#333;"&gt;Her yıl olduğu gibi bu yıl da programlama dilleri popülerlik yarışında. 2025'te öne çıkan diller şunlar:&lt;/p&gt;
-      &lt;ul style="color:#333;"&gt;
-        &lt;li&gt;&lt;strong style="color:#006699;"&gt;JavaScript:&lt;/strong&gt; Web geliştirme ve front-end için hala lider.&lt;/li&gt;
-        &lt;li&gt;&lt;strong style="color:#3572A5;"&gt;Python:&lt;/strong&gt; AI ve veri bilimiyle yükselişini sürdürüyor.&lt;/li&gt;
-        &lt;li&gt;&lt;strong style="color:#2b7489;"&gt;TypeScript:&lt;/strong&gt; Büyük ölçekli projelerde tercih ediliyor.&lt;/li&gt;
-        &lt;li&gt;&lt;strong style="color:#00ADD8;"&gt;Go:&lt;/strong&gt; Sunucu ve mikroservislerde popüler.&lt;/li&gt;
-        &lt;li&gt;&lt;strong style="color:#dea584;"&gt;Rust:&lt;/strong&gt; Güvenlik ve performans için öne çıkıyor.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;p style="color:#002133;"&gt;Hangi dili seçerseniz seçin, güncel kalmak ve topluluğa katılmak çok önemli.&lt;/p&gt;
+      <h2>AI Destekli Yazılım Araçları</h2>
+      <ul>
+        <li><strong>GitHub Copilot:</strong> Kod tamamlama ve öneri</li>
+        <li><strong>Tabnine:</strong> Makine öğrenimiyle çalışan öneri motoru</li>
+        <li><strong>Kite:</strong> AI destekli Python editörü</li>
+        <li><strong>Amazon CodeWhisperer:</strong> AWS ile entegre yapay zeka asistanı</li>
+      </ul>
+      <p>Bu araçlar, geliştiricilerin üretkenliğini artırmak ve hata oranını düşürmek için kullanılıyor.</p>
     `,
-    createdAt: "2025-06-29T09:00:00.000Z",
   },
   {
     id: "5",
-    title: "Freelancer Olarak Para Kazanmanın 5 Yolu",
-    slug: "freelancer-para-kazanma",
-    category: "CAREER",
+    title: "Prompt Engineering Nedir? AI ile Etkileşim Sanatı",
+    slug: "prompt-engineering-nedir",
+    category: "TECHNOLOGY",
+    description:
+      "Prompt engineering nedir, neden önemlidir ve yapay zeka sistemleriyle etkili iletişim nasıl kurulur? Teknikleri ve örnekleriyle anlattık.",
+    keywords: [
+      "prompt engineering",
+      "ai prompt yazımı",
+      "chatgpt prompt örnekleri",
+      "prompt nasıl yazılır",
+      "2025 ai etkileşimi",
+      "yapay zekayı yönlendirme",
+    ],
     thumbnail: "/Blog-images/5.png",
+    createdAt: "2025-07-05T13:30:00.000Z",
     content: `
-      &lt;h2 style="color:#002133;"&gt;Freelancer Olarak Para Kazanmanın 5 Yolu&lt;/h2&gt;
-      &lt;p style="color:#333;"&gt;Freelance çalışmak, hem özgürlük hem de dövizle gelir fırsatı sunar. İşte en çok tercih edilen freelance gelir yöntemleri:&lt;/p&gt;
-      &lt;ul style="color:#333;"&gt;
-        &lt;li&gt;Grafik tasarım: Logo, afiş ve sosyal medya görselleri hazırlayın.&lt;/li&gt;
-        &lt;li&gt;Yazılım geliştirme: Web ve mobil uygulama projeleri alın.&lt;/li&gt;
-        &lt;li&gt;İçerik üretimi: Blog yazısı, çeviri veya metin yazarlığı yapın.&lt;/li&gt;
-        &lt;li&gt;Online eğitim: Udemy veya Skillshare'de kurs hazırlayın.&lt;/li&gt;
-        &lt;li&gt;Danışmanlık: Uzmanlık alanınızda bireysel hizmet verin.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;p style="color:#002133;"&gt;&lt;strong&gt;Dolar bazlı gelir elde etmek için uluslararası platformlara kaydolabilir ve portföyünüzü güçlendirebilirsiniz.&lt;/strong&gt;&lt;/p&gt;
+      <h2>Prompt Engineering Nedir?</h2>
+      <p>Prompt engineering, yapay zeka sistemlerine doğru ve etkili girdiler vererek istenilen çıktıları elde etme sürecidir.</p>
+      <h2>Başarılı Prompt Yazımı İçin İpuçları</h2>
+      <ul>
+        <li>Net, kısa ve yönlendirici cümleler</li>
+        <li>Bağlam sağlamak</li>
+        <li>Örnekle açıklamak</li>
+      </ul>
     `,
-    createdAt: "2025-06-28T18:30:00.000Z",
   },
   {
     id: "6",
-    title: "2025’in En Popüler Mobil Uygulamaları",
-    slug: "populer-mobil-uygulamalar",
+    title: "AI ile Mobil Uygulama Geliştirme: Geleceğe Adım",
+    slug: "ai-ile-mobil-uygulama-gelistirme",
     category: "TECHNOLOGY",
+    description:
+      "Yapay zeka destekli mobil uygulama geliştirme trendi 2025'te zirvede. Kodlama süreçleri nasıl kolaylaşıyor, hangi araçlar kullanılıyor?",
+    keywords: [
+      "mobil uygulama ai",
+      "yapay zeka mobil geliştirme",
+      "flutter ai",
+      "react native ai",
+      "ai ile app geliştirme",
+      "mobil yazılımda trendler",
+    ],
     thumbnail: "/Blog-images/6.png",
+    createdAt: "2025-07-05T13:45:00.000Z",
     content: `
-      &lt;h2 style="color:#002133;"&gt;2025’in En Popüler Mobil Uygulamaları&lt;/h2&gt;
-      &lt;p style="color:#333;"&gt;Mobil uygulamalar hayatımızı kolaylaştırmaya devam ediyor. 2025 yılında öne çıkan bazı uygulamalar şunlar:&lt;/p&gt;
-      &lt;ul style="color:#333;"&gt;
-        &lt;li&gt;&lt;strong style="color:#006699;"&gt;ChatAI:&lt;/strong&gt; Akıllı sohbet ve asistan özellikleriyle öne çıkıyor.&lt;/li&gt;
-        &lt;li&gt;&lt;strong style="color:#3572A5;"&gt;FitLife:&lt;/strong&gt; Kişiselleştirilmiş fitness ve sağlık takibi sunuyor.&lt;/li&gt;
-        &lt;li&gt;&lt;strong style="color:#2b7489;"&gt;MindSync:&lt;/strong&gt; Zihin sağlığı ve meditasyon uygulaması olarak popüler.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;h3 style="color:#002133;"&gt;Popülerliklerinin Sırrı Nedir?&lt;/h3&gt;
-      &lt;p style="color:#333;"&gt;Kullanıcı dostu arayüz, yenilikçi özellikler ve kişiselleştirme seçenekleriyle milyonlara ulaştılar.&lt;/p&gt;
+      <h2>Mobil Geliştirme ve AI</h2>
+      <p>Yapay zeka sayesinde mobil uygulama süreçleri hem daha akıllı hem de hızlı hale geliyor.</p>
+      <ul>
+        <li>Otomatik test ve hata tespiti</li>
+        <li>Kişiselleştirilmiş kullanıcı deneyimi</li>
+        <li>Sesli komutlarla uygulama kullanımı</li>
+      </ul>
     `,
-    createdAt: "2025-06-27T08:00:00.000Z",
   },
   {
     id: "7",
-    title: "Yapay Zeka ile Nasıl Para Kazanılır?",
-    slug: "yapay-zeka-para-kazanmak",
-    category: "AI",
+    title: "ChatGPT ile Yazılım Geliştirme: En Etkili Kullanım Yöntemleri",
+    slug: "chatgpt-ile-yazilim-gelistirme",
+    category: "TECHNOLOGY",
+    description:
+      "ChatGPT gibi AI modelleriyle yazılım geliştirme süreci nasıl kolaylaşır? Kod yazdırma, hata ayıklama ve refactoring örnekleriyle anlatıyoruz.",
+    keywords: [
+      "chatgpt yazılım",
+      "chatgpt ile kod yazma",
+      "yapay zeka ile kod üretme",
+      "chatgpt yazılımcı kullanımı",
+      "ai destekli yazılım",
+      "openai chatgpt kod örnekleri",
+    ],
     thumbnail: "/Blog-images/7.png",
+    createdAt: "2025-07-05T14:00:00.000Z",
     content: `
-      &lt;h2 style="color:#002133;"&gt;Yapay Zeka ile Para Kazanma Yöntemleri&lt;/h2&gt;
-      &lt;p style="color:#333;"&gt;Yapay zeka, sadece teknolojik bir yenilik değil, aynı zamanda yeni gelir kapılarını da beraberinde getiriyor. İşte AI ile para kazanmanın yolları:&lt;/p&gt;
-      &lt;ul style="color:#333;"&gt;
-        &lt;li&gt;AI ile içerik üretimi: Blog yazıları, görseller veya videolar oluşturun.&lt;/li&gt;
-        &lt;li&gt;Otomasyon sistemleri kurarak işletmelerin verimliliğini artırın.&lt;/li&gt;
-        &lt;li&gt;Yapay zeka tabanlı danışmanlık ve eğitim hizmetleri sunun.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;p style="color:#002133;"&gt;&lt;strong&gt;Gelecekte, AI ile çalışanlar daha fazla kazanç fırsatı yakalayacak.&lt;/strong&gt;&lt;/p&gt;
+      <h2>ChatGPT Yazılımda Nasıl Kullanılır?</h2>
+      <p>OpenAI’nin ChatGPT modeli, yazılım geliştirme sürecinde kod yazma, test üretme ve açıklama sağlama gibi alanlarda aktif şekilde kullanılmaktadır.</p>
+      <ul>
+        <li>Fonksiyon üretimi</li>
+        <li>Regex oluşturma</li>
+        <li>Yorum satırı ekleme</li>
+        <li>Mevcut kodu optimize etme</li>
+      </ul>
     `,
-    createdAt: "2025-06-26T14:45:00.000Z",
   },
   {
     id: "8",
-    title: "Kariyerine Yeni Başlayanlar İçin LinkedIn Taktikleri",
-    slug: "linkedin-taktikleri",
-    category: "SELF_IMPROVEMENT",
+    title: "Yazılımcılar için 2025’te Öğrenilmesi Gereken Programlama Dilleri",
+    slug: "2025-programlama-dilleri",
+    category: "TECHNOLOGY",
+    description:
+      "2025'te yazılımcılar hangi dilleri öğrenmeli? TypeScript, Rust, Go ve Python'un yükselişine dair analizler bu yazıda.",
+    keywords: [
+      "2025 yazılım dilleri",
+      "hızlı öğrenilen diller",
+      "typescript mi rust mı",
+      "yazılımcı hangi dili öğrenmeli",
+      "geleceğin programlama dilleri",
+    ],
     thumbnail: "/Blog-images/8.png",
+    createdAt: "2025-07-05T14:15:00.000Z",
     content: `
-      &lt;h2 style="color:#002133;"&gt;LinkedIn'de Başarıya Ulaşmak İçin Taktikler&lt;/h2&gt;
-      &lt;p style="color:#333;"&gt;Kariyerine yeni başlayanlar için LinkedIn, doğru kullanıldığında büyük fırsatlar sunar. Profilinizi öne çıkarmak için şunlara dikkat edin:&lt;/p&gt;
-      &lt;ul style="color:#333;"&gt;
-        &lt;li&gt;Profil fotoğrafınız ve arka plan görseliniz profesyonel olsun.&lt;/li&gt;
-        &lt;li&gt;Görsel ve içerik paylaşımıyla aktif olun.&lt;/li&gt;
-        &lt;li&gt;Doğru anahtar kelimeleri kullanarak aramalarda öne çıkın.&lt;/li&gt;
-        &lt;li&gt;Bağlantılarınızı artırın ve sektörünüzdeki kişilerle iletişim kurun.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;p style="color:#002133;"&gt;&lt;strong&gt;Unutmayın:&lt;/strong&gt; LinkedIn'de görünür olmak için düzenli ve özgün paylaşımlar yapın.&lt;/p&gt;
+      <h2>2025’in Popüler Yazılım Dilleri</h2>
+      <ul>
+        <li><strong>TypeScript:</strong> JavaScript'in güvenli ve güçlü hali</li>
+        <li><strong>Rust:</strong> Güvenlik odaklı ve hızlı</li>
+        <li><strong>Go:</strong> Sunucu tarafı ve API geliştirme için ideal</li>
+        <li><strong>Python:</strong> Veri bilimi ve yapay zeka için lider</li>
+      </ul>
     `,
-    createdAt: "2025-06-25T11:20:00.000Z",
   },
   {
     id: "9",
-    title: "Kodlama Öğrenmek İçin En İyi 5 YouTube Kanalı",
-    slug: "en-iyi-youtube-kanallari",
-    category: "EDUCATION",
+    title: "AI ile Web Sitesi Tasarlamak: Kod Yazmadan UI Oluşturma",
+    slug: "ai-ile-web-site-tasarimi",
+    category: "TECHNOLOGY",
+    description:
+      "Yapay zeka artık web tasarımı da yapabiliyor! Kod yazmadan modern ve responsive arayüzler oluşturmak mümkün mü?",
+    keywords: [
+      "ai web tasarımı",
+      "yapay zeka ile web tasarımı",
+      "kod yazmadan site yapmak",
+      "ui design ai",
+      "yazılımda tasarım otomasyonu",
+      "figma ai araçları",
+    ],
     thumbnail: "/Blog-images/9.png",
+    createdAt: "2025-07-05T14:30:00.000Z",
     content: `
-      &lt;h2 style="color:#002133;"&gt;Kodlama Öğrenmek İçin En İyi YouTube Kanalları&lt;/h2&gt;
-      &lt;p style="color:#333;"&gt;Programlama öğrenirken görsel anlatım çok etkili olabilir. İşte en iyi 5 YouTube kanalı:&lt;/p&gt;
-      &lt;ol style="color:#333;"&gt;
-        &lt;li&gt;&lt;strong style="color:#006699;"&gt;freeCodeCamp:&lt;/strong&gt; Ücretsiz ve kapsamlı dersler sunar.&lt;/li&gt;
-        &lt;li&gt;&lt;strong style="color:#3572A5;"&gt;Traversy Media:&lt;/strong&gt; Modern web teknolojileri ve projeler.&lt;/li&gt;
-        &lt;li&gt;&lt;strong style="color:#2b7489;"&gt;The Net Ninja:&lt;/strong&gt; Kısa ve anlaşılır eğitimlerle bilinir.&lt;/li&gt;
-        &lt;li&gt;Academind&lt;/li&gt;
-        &lt;li&gt;Programming with Mosh&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;p style="color:#002133;"&gt;&lt;strong&gt;Düzenli takip ederek ve projeler yaparak hızlıca gelişebilirsiniz.&lt;/strong&gt;&lt;/p&gt;
+      <h2>Yapay Zeka ile Web Tasarımı</h2>
+      <p>Wix, Framer AI ve Durable gibi araçlarla artık web siteleri saniyeler içinde tasarlanabiliyor. Kullanıcı deneyimi odaklı ve mobil uyumlu arayüzler oluşturmak için yalnızca birkaç komut yeterli.</p>
     `,
-    createdAt: "2025-06-24T10:00:00.000Z",
   },
   {
     id: "10",
-    title: "Girişimcilik Yolculuğuna Başlarken Bilmeniz Gerekenler",
-    slug: "girisimcilik-yolculugu",
-    category: "BUSINESS",
+    title: "Yazılımcılar için AI Destekli Üretkenlik Hackleri",
+    slug: "yazilimci-uretkenlik-ai",
+    category: "TECHNOLOGY",
+    description:
+      "AI ile gününüzü nasıl daha verimli geçirirsiniz? Kod tamamlama, otomatik dokümantasyon ve planlama için en iyi yapay zeka destekli üretkenlik tüyoları.",
+    keywords: [
+      "yazılım üretkenlik",
+      "ai productivity",
+      "kod yazarken verimlilik",
+      "yazılımcı için zaman yönetimi",
+      "yapay zeka üretkenlik araçları",
+    ],
     thumbnail: "/Blog-images/10.png",
+    createdAt: "2025-07-05T14:45:00.000Z",
     content: `
-      &lt;h2 style="color:#002133;"&gt;Girişimcilik Yolculuğuna Başlarken Bilmeniz Gerekenler&lt;/h2&gt;
-      &lt;p style="color:#333;"&gt;Bir iş fikriniz var ama nereden başlayacağınızı bilmiyorsanız, aşağıdaki adımlar size yol gösterecek:&lt;/p&gt;
-      &lt;ul style="color:#333;"&gt;
-        &lt;li&gt;İş modeli oluşturun: Nasıl gelir elde edeceğinizi planlayın.&lt;/li&gt;
-        &lt;li&gt;Hedef kitlenizi belirleyin ve onların ihtiyaçlarını analiz edin.&lt;/li&gt;
-        &lt;li&gt;MVP (Minimum Viable Product) geliştirin ve piyasaya hızlıca sunun.&lt;/li&gt;
-        &lt;li&gt;Geri bildirim toplayarak ürünü geliştirin.&lt;/li&gt;
-        &lt;li&gt;Doğru ekip ve yatırımcılarla büyüyün.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;p style="color:#002133;"&gt;&lt;strong&gt;Unutmayın:&lt;/strong&gt; Başarılı girişimciler hızlı hareket eder, risk alır ve sürekli öğrenir.&lt;/p&gt;
+      <h2>Yazılımcılar için AI Tabanlı Araçlar</h2>
+      <ul>
+        <li><strong>Code completion:</strong> Otomatik kod önerileri</li>
+        <li><strong>Chat asistanları:</strong> StackOverflow yerine ChatGPT</li>
+        <li><strong>Dokümantasyon oluşturma:</strong> AI destekli açıklama</li>
+        <li><strong>Günlük planlama:</strong> Otomatik görev atama</li>
+      </ul>
     `,
-    createdAt: "2025-06-23T17:15:00.000Z",
   },
   {
-    title: "Yapay Zeka Nedir? Kullanım Alanları ve Geleceği",
-    slug: "yapay-zeka-nedir",
+    id: "11",
+    title: "Agentic AI : Karar Alan Yapay Zekânın Yükselişi",
+    slug: "agentic-ai-karar-alan-yapay-zeka",
+    category: "TECHNOLOGY",
     description:
-      "Yapay zeka nedir, hangi alanlarda kullanılır ve gelecekte bizi neler bekliyor? Bu yazımızda yapay zekanın tanımı, örnekleri ve etkilerini detaylıca inceledik.",
+      "Agentic AI, yani kendi başına karar alıp eyleme geçen yapay zekâ sistemleri, 2025’te iş dünyasını dönüştürüyor. Farkını keşfedin.",
+    keywords: [
+      "agentic ai nedir",
+      "karar alan yapay zeka",
+      "otonom ai ajanlar",
+      "2025 ai trendler",
+      "agentic web",
+    ],
+    thumbnail: "/Blog-images/1.png",
+    createdAt: "2025-07-05T15:00:00.000Z",
     content: `
-    <h2>Yapay Zeka Nedir?</h2>
+      <h2>Agentic AI Nedir?</h2>
+      <p><strong>Agentic AI</strong>, sadece yanıt vermekle kalmayıp “kendi başına karar alıp aksiyon alan” otonom sistemleri tanımlar :contentReference[oaicite:1]{index=1}.</p>
+      <h2>Trend ve Yaygınlık</h2>
+      <ul>
+        <li>Deloitte’a göre 2025 itibarıyla şirketlerin %25’i pilot projelere başladı; 2027’ye kadar bu oran %50’ye çıkacak :contentReference[oaicite:2]{index=2}.</li>
+        <li>Gartner'a göre, 2029’da müşteri hizmetlerinin %80’i insandan bağımsız çözülmeye başlayacak :contentReference[oaicite:3]{index=3}.</li>
+      </ul>
+      <h2>Uygulama Alanları</h2>
+      <ul>
+        <li><strong>Finans:</strong> JPMorgan gibi kurumlar, ticari işlemleri ai ajanlara devrediyor :contentReference[oaicite:4]{index=4}.</li>
+        <li><strong>Endüstri:</strong> Siemens tesislerinde bakım görevlerini önceden belirleyen agentic AI kullanımı var :contentReference[oaicite:5]{index=5}.</li>
+      </ul>
+      <h2>Zorluklar</h2>
+      <p>Otonomi, güvenlik, okunabilirlik (explainability) ve hesap verebilirlik gerektiriyor:contentReference[oaicite:6]{index=6}.</p>
+      <h2>Gelecek</h2>
+      <p>İşletmeler, agentic AI'ı "permission economy" (izinli ekonomi) ile dijital dönüşüme entegre ediyor :contentReference[oaicite:7]{index=7}.</p>
+    `,
+  },
+
+  {
+    id: "12",
+    title: "Edge AI & On‑Device Yapay Zeka: Gerçek Zamanlı Akıllı Cihazlar",
+    slug: "edge-ai-cihaz-uzerinde-ai",
+    category: "TECHNOLOGY",
+    description:
+      "Edge AI, verileri buluta göndermeden cihaz üzerinde işlenmesini sağlıyor. Gizlilik ve hızı ön planda tutan bu trendin 2025’teki yaygın kullanım alanlarını keşfedin.",
+    keywords: [
+      "edge ai nedir",
+      "on device ai",
+      "tinyml 2025",
+      "gizlilik odaklı ai",
+      "gerçek zamanlı ai",
+    ],
+    thumbnail: "/Blog-images/2.png",
+    createdAt: "2025-07-05T15:30:00.000Z",
+    content: `
+      <h2>Edge AI Nedir?</h2>
+      <p>Edge AI, yapay zekânın bulut yerine doğrudan cihazlar üzerinde çalışmasıdır :contentReference[oaicite:8]{index=8}.</p>
+      <h2>Örnek Teknolojiler</h2>
+      <ul>
+        <li><strong>TinyML:</strong> Microcontroller’larda quantized ML çalıştırılıyor (TensorFlow Lite Micro) :contentReference[oaicite:9]{index=9}.</li>
+        <li><strong>Federated Learning:</strong> Veri cihazda kalırken model güncellemesi yapılıyor :contentReference[oaicite:10]{index=10}.</li>
+      </ul>
+      <h2>Kullanım Alanları</h2>
+      <ul>
+        <li>Giyilebilir cihazlarda ses tanıma</li>
+        <li>Akıllı kamera sistemlerinde gerçek zamanlı nesne algılama</li>
+        <li>Endüstriyel makine bakımında ani arıza tespiti</li>
+      </ul>
+      <h2>Avantajlar</h2>
+      <p>Düşük gecikme, veri gizliliği ve şebeke bağımsızlığı sağlamaktadır :contentReference[oaicite:11]{index=11}.</p>
+      <h2>Gelecek</h2>
+      <p>2025'te Edge AI, sensörlerden alınan verileri hızla işleyerek endüstri 4.0 süreçleri içinde kritik rol oynayacak :contentReference[oaicite:12]{index=12}.</p>
+    `,
+  },
+
+  {
+    id: "13",
+    title: "AI‑Destekli Siber Güvenlik & Zero‑Trust Mimarisi",
+    slug: "ai-siber-guvenlik-zero-trust",
+    category: "TECHNOLOGY",
+    description:
+      "Siber savunma AI ile güçleniyor. Anomali tespiti, otomatik müdahale ve zero-trust mimarileri 2025’te kritik önem kazanıyor.",
+    keywords: [
+      "ai siber güvenlik",
+      "zero trust mimarisi",
+      "anomali tespiti ai",
+      "AI siber savunma",
+      "2025 güvenlik trendleri",
+    ],
+    thumbnail: "/Blog-images/3.png",
+    createdAt: "2025-07-05T16:00:00.000Z",
+    content: `
+      <h2>AI ile Siber Güvenlik</h2>
+      <p>Agentic AI, saldırı öncesinde anomali tespiti ve otomatik müdahaleye geçiyor :contentReference[oaicite:13]{index=13}.</p>
+      <h2>Zero‑Trust Mimarisi</h2>
+      <p>‘Asla güvenme, her zaman doğrula’ ilkesiyle AI destekli kimlik doğrulama yaygınlaşıyor.</p>
+      <h2>Cisco, Google, AWS Yaklaşımları</h2>
+      <p>Bu firmalar AI ile gerçek zamanlı tehdit taraması ve güvenlik katmanı sunuyor :contentReference[oaicite:14]{index=14}.</p>
+      <h2>Yarattığı Değer</h2>
+      <ul>
+        <li>İnsan müdahalesi beklemeden tehdit durdurma</li>
+        <li>Anomali algılamada daha hızlı öngörü</li>
+        <li>Zero-trust ile güvenlik esnekliği</li>
+      </ul>
+      <h2>Gelecek</h2>
+      <p>Edge AI ile birleştiğinde IoT cihazlarda tam AI destekli siber savunma mümkün olacak.</p>
+    `,
+  },
+
+  {
+    id: "14",
+    title: "Multimodal Generative AI : Metin, Görüntü, Ses ve Video Birleşiyor",
+    slug: "multimodal-generative-ai",
+    category: "TECHNOLOGY",
+    description:
+      "Metin, ses, görüntü ve video gibi medya türleri aynı sistemde işlenip üretiliyor. Multimodal AI’nın 2025’teki güçlü kullanım örneklerini inceleyin.",
+    keywords: [
+      "multimodal ai nedir",
+      "generative ai video",
+      "ai ile ses ve görüntü",
+      "2025 multimodal trend",
+      "çok modlu yapay zeka",
+    ],
+    thumbnail: "/Blog-images/4.png",
+    createdAt: "2025-07-05T16:30:00.000Z",
+    content: `
+      <h2>Multimodal Generative AI Nedir?</h2>
+      <p>AI artık sadece ⚙️ metni değil; aynı anda ses, görüntü ve video da anlayıp üretebiliyor :contentReference[oaicite:15]{index=15}.</p>
+      <h2>Popüler Kullanımlar</h2>
+      <ul>
+        <li>Görüntü + metin açıklaması (Captioning)</li>
+        <li>Video oluşturma: kısa animasyonlar veya reklam videosu</li>
+        <li>Sesli diyalog entegrasyonlu görsel asistanlar</li>
+      </ul>
+      <h2>2025 Gelişmeleri</h2>
+      <p>Modeller artık tüm medya türlerini tek bir uçtan uca akışta işleyebilir hale geldi :contentReference[oaicite:16]{index=16}.</p>
+      <h2>Avantajlar</h2>
+      <ul>
+        <li>Tek seferde çoklu medya üretimi</li>
+        <li>Daha doğal ve etkileşimli deneyimler</li>
+        <li>İçerik üretiminde hız ve çeşitlilik</li>
+      </ul>
+      <h2>Gelecek</h2>
+      <p>Eğitim, oyun ve alışverişte gerçek zamanlı multimodal asistanlar büyük fark yaratacak.</p>
+    `,
+  },
+
+  {
+    id: "15",
+    title:
+      "Model Context Protocol (MCP) : Agentic AI Entegrasyonu İçin Yeni Standart",
+    slug: "model-context-protocol-mcp",
+    category: "TECHNOLOGY",
+    description:
+      "Model Context Protocol (MCP), AI ajanlarının sistemlerle kolay entegre çalışmasını sağlayan açık standarttır. OpenAI ve Google tarafından kabul edilmiş gelişme.",
+    keywords: [
+      "model context protocol nedir",
+      "mcp ai standard",
+      "ai ajan protokol",
+      "openai mcp",
+      "2025 ai entegrasyon",
+    ],
+    thumbnail: "/Blog-images/5.png",
+    createdAt: "2025-07-05T17:00:00.000Z",
+    content: `
+      <h2>MCP Nedir?</h2>
+      <p><strong>Model Context Protocol (MCP)</strong>, AI ajanlarının uygulamalarla JSON‑RPC üzerinden bağlanmasını sağlayan açık standarttır :contentReference[oaicite:17]{index=17}.</p>
+      <h2>Kabul Edilme</h2>
+      <p>Anthropic tarafından tanımlandı, Kasım 2024’te duyuruldu. Mart 2025'te OpenAI, Google DeepMind tarafından desteklendi :contentReference[oaicite:18]{index=18}.</p>
+      <h2>Ne Sağlıyor?</h2>
+      <ul>
+        <li>Dosya okuma</li>
+        <li>Fonksiyon çağırma</li>
+        <li>Güvenli araç çalıştırma</li>
+      </ul>
+      <h2>Güvenlik ve Risk</h2>
+      <p>Prompt enjeksiyonu ve araç erişim sıkıntıları gibi riskler üzerine uyarılar var :contentReference[oaicite:19]{index=19}.</p>
+      <h2>Gelecek</h2>
+      <p>MCP, agentic web ve çok ajanlı AI ekosistemlerinde temel bir yapıtaşı olacak.</p>
+    `,
+  },
+  {
+    id: "16",
+    title: "Blockchain Tabanlı Uygulamaların Geleceği",
+    slug: "blockchain-uygulama-gelecegi",
+    category: "TECHNOLOGY",
+    description:
+      "Blockchain sadece kripto paralarla sınırlı değil. Bu yazıda dağıtık uygulamalarda, güvenli veri paylaşımında ve Web3 ekosistemindeki yerini inceliyoruz.",
+    keywords: [
+      "blockchain nedir",
+      "web3 teknolojisi",
+      "akıllı kontratlar",
+      "blockchain uygulama örnekleri",
+      "dağıtık sistemler",
+      "blockchain trendleri 2025",
+    ],
+    thumbnail: "/Blog-images/6.png",
+    createdAt: "2025-07-05T00:00:00.000Z",
+    content: `
+    <h2>Blockchain Tabanlı Uygulamalar Neden Önemli?</h2>
     <p>
-    Yapay zeka (AI), insan zekasını taklit eden ve öğrenme, problem çözme, karar verme gibi bilişsel işlevleri gerçekleştirebilen sistemlerin genel adıdır. 
-    Bu sistemler genellikle veri analizi, örüntü tanıma ve otomatik karar verme yeteneklerine sahiptir.
+      Blockchain teknolojisi, verinin merkeziyetsiz şekilde şeffaf ve güvenli tutulmasını sağlar. Bu özellik, sadece kripto paralar için değil; sağlık, finans, oylama sistemleri, dijital kimlik ve telif hakkı yönetimi gibi birçok sektörde yeni çözümler sunar.
     </p>
 
-    <h2>Yapay Zeka Hangi Alanlarda Kullanılır?</h2>
+    <h2>Web3 ile Gelişen Yeni Nesil Uygulamalar</h2>
+    <p>
+      Web3, kullanıcıların veriye sahip olduğu ve yönettiği yeni bir internet yapısını temsil eder. NFT’lerden DAO’lara kadar birçok yapının temelinde blockchain teknolojisi yatar.
+    </p>
+
     <ul>
-      <li><strong>Sağlık:</strong> Hastalık teşhisi, ilaç geliştirme, kişisel sağlık takibi</li>
-      <li><strong>Finans:</strong> Risk analizi, dolandırıcılık tespiti, yatırım önerileri</li>
-      <li><strong>Perakende:</strong> Kişiselleştirilmiş ürün önerileri, stok yönetimi</li>
-      <li><strong>Otomotiv:</strong> Otonom araçlar, sürücü destek sistemleri</li>
-      <li><strong>Eğitim:</strong> Akıllı öğrenme sistemleri, öğrenci performans analizi</li>
+      <li>Akıllı kontratlarla otomatik çalışan uygulamalar</li>
+      <li>DeFi (Merkeziyetsiz Finans) platformları</li>
+      <li>Dijital kimlik sistemleri</li>
     </ul>
 
-    <h2>Yapay Zekanın Avantajları</h2>
+    <h2>Gelecekte Ne Bekleniyor?</h2>
     <p>
-    - Hızlı ve doğru karar alma<br />
-    - Maliyet azaltımı<br />
-    - Zaman tasarrufu<br />
-    - Kişiselleştirilmiş hizmetler sunma
-    </p>
-
-    <h2>Yapay Zeka Gelecekte Nereye Gidiyor?</h2>
-    <p>
-    2025 ve sonrası için yapay zekanın iş gücünü dönüştüreceği, daha fazla alanda karar destek sistemleri haline geleceği öngörülüyor. 
-    Ancak etik ve gizlilik konuları da büyük önem kazanacak.
-    </p>
-
-    <h2>Sonuç</h2>
-    <p>
-    Yapay zeka günümüzde hayatımızın birçok alanında yer alıyor ve her geçen gün gelişiyor. 
-    Eğer bu konuda güncel kalmak ve fırsatları kaçırmamak istiyorsanız yapay zekayı öğrenmeye bugünden başlamalısınız.
+      2025 yılı itibariyle, blockchain tabanlı çözümlerin daha kullanıcı dostu arayüzlerle birlikte yaygınlaşması bekleniyor. Aynı zamanda regülasyonların artmasıyla güvenlik standartları da gelişecek.
     </p>
   `,
-    thumbnail: "/Blog-images/1.png", // varsa
+  },
+  {
+    id: "17",
+    title: "Yazılımda No-Code ve Low-Code Akımı",
+    slug: "no-code-low-code-trendi",
+    category: "TECHNOLOGY",
+    description:
+      "Kod yazmadan uygulama geliştirme dönemi başladı. No-Code ve Low-Code platformlar, yazılım geliştirmenin şeklini değiştiriyor.",
+    keywords: [
+      "no-code nedir",
+      "low-code platformlar",
+      "kod yazmadan uygulama",
+      "bubble vs webflow",
+      "2025 yazılım trendleri",
+      "mobil uygulama no-code",
+    ],
+    thumbnail: "/Blog-images/7.png",
     createdAt: "2025-07-05T00:00:00.000Z",
+    content: `
+    <h2>No-Code ve Low-Code Nedir?</h2>
+    <p>
+      No-Code platformlar, teknik bilgisi olmayan kişilerin sürükle-bırak yöntemiyle yazılım geliştirmesini sağlar. Low-Code ise yazılımcılara süreçleri hızlandırmak için kısmi kod yazma imkânı tanır.
+    </p>
+
+    <h2>Popüler Platformlar</h2>
+    <ul>
+      <li>Webflow – Web siteleri için No-Code çözüm</li>
+      <li>Bubble – Web uygulamaları geliştirmek için</li>
+      <li>Adalo – Mobil uygulama geliştirme</li>
+    </ul>
+
+    <h2>Avantajları</h2>
+    <p>
+      - Geliştirme süresini %70’e kadar azaltır<br />
+      - Teknik olmayan ekiplerin katkı vermesini sağlar<br />
+      - Maliyetleri düşürür
+    </p>
+
+    <h2>Yazılımcılar İçin Ne Anlama Geliyor?</h2>
+    <p>
+      No-Code, yazılımcıların yerini almak yerine onları tekrarlayan işlerden kurtarır. Prototipleme, MVP oluşturma ve hızlı testlerde büyük kolaylık sağlar.
+    </p>
+  `,
+  },
+  {
+    id: "18",
+    title: "Veri Bilimi 2025: En Popüler Kütüphaneler ve Alanlar",
+    slug: "veri-bilimi-2025-kutuphaneler",
+    category: "DATA SCIENCE",
+    description:
+      "Veri bilimi hâlâ yükselişte. 2025 yılında hangi kütüphaneler, diller ve uygulama alanları öne çıkıyor?",
+    keywords: [
+      "veri bilimi trendleri 2025",
+      "python veri analizi",
+      "pandas nedir",
+      "scikit-learn 2025",
+      "veri bilimi alanları",
+      "ai ve veri bilimi",
+    ],
+    thumbnail: "/Blog-images/8.png",
+    createdAt: "2025-07-05T00:00:00.000Z",
+    content: `
+    <h2>Veri Bilimi Neden Hâlâ Önemli?</h2>
+    <p>
+      2025 yılında da veri bilimi, şirketlerin karar alma süreçlerinde kilit rol oynamaya devam ediyor. Büyük veri, yapay zeka ve tahminleme sistemleri ile daha akıllı sistemler inşa ediliyor.
+    </p>
+
+    <h2>En Popüler Kütüphaneler</h2>
+    <ul>
+      <li><strong>Pandas:</strong> Veri temizleme ve manipülasyon için temel kütüphane</li>
+      <li><strong>Scikit-learn:</strong> Makine öğrenmesi modelleri</li>
+      <li><strong>TensorFlow & PyTorch:</strong> Derin öğrenme</li>
+    </ul>
+
+    <h2>Öne Çıkan Uygulama Alanları</h2>
+    <p>
+      - Sağlık verisi analizi<br />
+      - Finansal tahminleme<br />
+      - Perakende satış tahminleri<br />
+      - Üretim optimizasyonu
+    </p>
+  `,
+  },
+  {
+    id: "19",
+    title: "Siber Güvenlik 2025: Tehditler ve Korunma Yöntemleri",
+    slug: "siber-guvenlik-2025-trendler",
+    category: "SECURITY",
+    description:
+      "Veri ihlalleri ve siber saldırılar artarken, 2025'te hangi güvenlik stratejileri ve teknolojiler ön planda?",
+    keywords: [
+      "siber güvenlik 2025",
+      "güvenlik duvarı nedir",
+      "zero trust nedir",
+      "vpn güvenli mi",
+      "phishing saldırıları",
+      "siber tehditler",
+    ],
+    thumbnail: "/Blog-images/9.png",
+    createdAt: "2025-07-05T00:00:00.000Z",
+    content: `
+    <h2>Yeni Nesil Siber Tehditler</h2>
+    <p>
+      Phishing saldırıları, sosyal mühendislik ve fidye yazılımları artık daha akıllı ve hedef odaklı. AI destekli kötü amaçlı yazılımlar, klasik güvenlik önlemlerini aşabiliyor.
+    </p>
+
+    <h2>Ön Plandaki Güvenlik Stratejileri</h2>
+    <ul>
+      <li><strong>Zero Trust Security:</strong> Hiçbir kullanıcıya otomatik güvenme prensibi</li>
+      <li>Yapay zeka destekli saldırı analizi</li>
+      <li>Kapsayıcı veri şifreleme yöntemleri</li>
+    </ul>
+
+    <h2>Kullanıcılar Ne Yapmalı?</h2>
+    <p>
+      - Güncel yazılımlar kullanın<br />
+      - 2FA (iki adımlı doğrulama) aktif edin<br />
+      - Bilinmeyen bağlantılara tıklamayın<br />
+      - Şirketler için Red Team & Blue Team testleri uygulayın
+    </p>
+  `,
+  },
+  {
+    id: "20",
+    title: "Edge Computing Nedir? Bulutun Ötesindeki Teknoloji",
+    slug: "edge-computing-nedir",
+    category: "TECHNOLOGY",
+    description:
+      "Edge Computing, veriyi bulut yerine kaynağa yakın işleyerek daha hızlı ve güvenli hale getiriyor. Peki bu ne anlama geliyor?",
+    keywords: [
+      "edge computing nedir",
+      "bulut bilişim farkı",
+      "iot ve edge computing",
+      "dağıtık işlem gücü",
+      "edge computing avantajları",
+      "2025 edge teknolojileri",
+    ],
+    thumbnail: "/Blog-images/10.png",
+    createdAt: "2025-07-05T00:00:00.000Z",
+    content: `
+    <h2>Edge Computing Nedir?</h2>
+    <p>
+      Edge computing, veriyi merkezî sunucular yerine kaynağa en yakın noktada işleyerek; gecikmeyi azaltır, bant genişliği kullanımını düşürür ve veri güvenliğini artırır.
+    </p>
+
+    <h2>Hangi Alanlarda Kullanılıyor?</h2>
+    <ul>
+      <li>IoT cihazları ve akıllı ev sistemleri</li>
+      <li>Otonom araçlar</li>
+      <li>Fabrikalarda anlık üretim verisi analizi</li>
+    </ul>
+
+    <h2>Avantajları</h2>
+    <p>
+      - Daha hızlı veri işleme<br />
+      - Realtime karar alma yeteneği<br />
+      - Veri gizliliği için yerel kontrol
+    </p>
+
+    <h2>Edge vs Cloud</h2>
+    <p>
+      Edge, bulutun yerini almaz ama tamamlayıcıdır. Kritik işlemleri yerelde yaparken, daha az hassas verileri buluta aktararak hibrit çözümler sunar.
+    </p>
+  `,
   },
 ];

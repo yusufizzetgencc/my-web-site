@@ -11,23 +11,27 @@ declare global {
   }
 }
 
-export async function generateMetadata(context: {
+export async function generateMetadata({
+  params,
+}: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await context.params;
-
+  const { slug } = await params;
   const blog = staticBlogs.find((b) => b.slug === slug) ?? null;
 
   if (!blog) return {};
 
+  const plainTextContent = he
+    .decode(blog.content.replace(/<[^>]+>/g, ""))
+    .slice(0, 150);
+
   return {
     title: blog.title,
-    description: he.decode(blog.content.replace(/<[^>]+>/g, "").slice(0, 150)),
+    description: blog.description || plainTextContent,
+    keywords: blog.keywords ?? [],
     openGraph: {
       title: blog.title,
-      description: he.decode(
-        blog.content.replace(/<[^>]+>/g, "").slice(0, 150)
-      ),
+      description: blog.description || plainTextContent,
       url: `https://yusufizzetgenc.com/blog/${blog.slug}`,
       images: [
         {
@@ -40,9 +44,7 @@ export async function generateMetadata(context: {
     twitter: {
       card: "summary_large_image",
       title: blog.title,
-      description: he.decode(
-        blog.content.replace(/<[^>]+>/g, "").slice(0, 150)
-      ),
+      description: blog.description || plainTextContent,
       images: [blog.thumbnail],
     },
   };
@@ -54,7 +56,6 @@ export default async function Page({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-
   const blog = staticBlogs.find((b) => b.slug === slug) ?? null;
 
   if (!blog) {
@@ -88,6 +89,7 @@ export default async function Page({
             Geri Dön
           </Link>
         </header>
+
         <div className="mb-6">
           <ins
             className="adsbygoogle"
@@ -103,6 +105,7 @@ export default async function Page({
             }}
           />
         </div>
+
         <header className="mb-6">
           <h1
             itemProp="headline"
@@ -125,7 +128,7 @@ export default async function Page({
             </div>
           )}
 
-          <div className=" flex items-center text-sm text-[#002133] font-medium gap-6 mb-6">
+          <div className="flex items-center text-sm text-[#002133] font-medium gap-6 mb-6">
             <div className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +146,7 @@ export default async function Page({
               </svg>
               <span itemProp="author">Yazar: Yusuf İzzet Genç</span>
             </div>
-            <div className=" flex items-center gap-2">
+            <div className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -160,7 +163,11 @@ export default async function Page({
               </svg>
               <span>
                 <time itemProp="datePublished" dateTime={blog.createdAt}>
-                  {new Date(blog.createdAt).toLocaleDateString()}
+                  {new Date(blog.createdAt).toLocaleDateString("tr-TR", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
                 </time>
               </span>
             </div>
@@ -202,7 +209,11 @@ export default async function Page({
                       : item.title}
                   </h3>
                   <p className="text-sm text-gray-500 mt-2">
-                    {new Date(item.createdAt).toLocaleDateString()}
+                    {new Date(item.createdAt).toLocaleDateString("tr-TR", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
                   </p>
                 </div>
               </Link>

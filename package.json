@@ -1,5 +1,5 @@
 {
-  "name": "freelansup",
+  "name": "yusuf izzet genc",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@next-auth/prisma-adapter": "^1.0.7",
     "@radix-ui/react-slot": "^1.2.3",
     "@tiptap/extension-bold": "^2.24.2",

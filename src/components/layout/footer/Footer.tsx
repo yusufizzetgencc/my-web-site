@@ -2,13 +2,13 @@
 
 import React, { useMemo } from "react";
 import Link from "next/link";
-import { Facebook, Instagram, Twitter, Mail } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = useMemo(() => new Date().getFullYear(), []);
 
   return (
-    <footer className="bg-[#001a29] text-white mt-20 pt-12 pb-6 px-4 sm:px-10">
+    <footer className="bg-[#001a29] text-white pt-12 pb-6 px-4 sm:px-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* Marka */}
         <div>
@@ -44,68 +44,18 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Destek */}
-        <div>
-          <h3 className="text-[#ffde59] font-semibold mb-4">Destek</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
-            <li>
-              <Link
-                href="/sikca-sorulan-sorular"
-                className="hover:text-[#ffb900]"
-              >
-                SSS
-              </Link>
-            </li>
-            <li>
-              <Link href="/yardim" className="hover:text-[#ffb900]">
-                Yardım
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/gizlilik-politikasi"
-                className="hover:text-[#ffb900]"
-              >
-                Gizlilik Politikası
-              </Link>
-            </li>
-            <li>
-              <Link href="/kullanim-sartlari" className="hover:text-[#ffb900]">
-                Kullanım Şartları
-              </Link>
-            </li>
-          </ul>
-        </div>
-
         {/* Sosyal Medya */}
         <div>
           <h3 className="text-[#ffde59] font-semibold mb-4">Bizi Takip Et</h3>
           <div className="flex gap-4">
             <Link
-              href="https://facebook.com"
-              target="_blank"
-              className="hover:text-[#ffb900]"
-            >
-              <Facebook size={20} />
-            </Link>
-            <Link
-              href="https://instagram.com"
+              href="https://www.instagram.com/coderyusuff?igsh=cndtdWE4eHBvdzU%3D&utm_source=qr"
               target="_blank"
               className="hover:text-[#ffb900]"
             >
               <Instagram size={20} />
             </Link>
-            <Link
-              href="https://twitter.com"
-              target="_blank"
-              className="hover:text-[#ffb900]"
-            >
-              <Twitter size={20} />
-            </Link>
-            <Link
-              href="mailto:info@freelansup.com"
-              className="hover:text-[#ffb900]"
-            >
+            <Link href="coderyusuff@gmail.com" className="hover:text-[#ffb900]">
               <Mail size={20} />
             </Link>
           </div>

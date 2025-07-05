@@ -1,4 +1,5 @@
-// src/app/blog/page.tsx
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -12,6 +13,7 @@ type Blog = {
   thumbnail: string;
   content: string;
   date: string;
+  description?: string;
 };
 
 const BlogPage = () => {
@@ -21,6 +23,7 @@ const BlogPage = () => {
     thumbnail: blog.thumbnail,
     content: blog.content,
     date: blog.createdAt,
+    description: blog.description,
   }));
 
   return (
@@ -30,7 +33,9 @@ const BlogPage = () => {
         {allBlogs.map((blog) => {
           const title = he.decode(blog.title);
           const thumbnail = he.decode(blog.thumbnail);
-          const content = he.decode(blog.content);
+          const cleanContent =
+            he.decode(blog.content.replace(/<[^>]+>/g, "")).slice(0, 200) +
+            "...";
 
           return (
             <Link
@@ -53,12 +58,15 @@ const BlogPage = () => {
               <div className="p-4 rounded">
                 <p className="text-sm text-gray-700 mt-2 flex items-center gap-2">
                   <FaCalendarAlt className="text-[#ffb900]" />
-                  {blog.date}
+                  {new Date(blog.date).toLocaleDateString("tr-TR", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
                 </p>
-                <div
-                  className="prose text-sm text-[#002133] mt-2 line-clamp-4 bg-[#f9f9f9] p-2 rounded"
-                  dangerouslySetInnerHTML={{ __html: content }}
-                />
+                <p className="text-sm text-[#002133] mt-2 bg-[#f9f9f9] p-2 rounded line-clamp-4">
+                  {cleanContent}
+                </p>
               </div>
             </Link>
           );
