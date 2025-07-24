@@ -90,7 +90,7 @@ export default async function Page({
             className="adsbygoogle"
             style={{ display: "block" }}
             data-ad-client="ca-pub-1731461024871182" // Senin client ID'n
-            data-ad-slot="2673851443" // Senin sol reklam birimi ID'n
+            data-ad-slot="2673851443" // Sol reklam birimi ID'n
             data-ad-format="auto"
             data-full-width-responsive="true"
           ></ins>
@@ -252,7 +252,7 @@ export default async function Page({
             className="adsbygoogle"
             style={{ display: "block" }}
             data-ad-client="ca-pub-1731461024871182" // Senin client ID'n
-            data-ad-slot="9088139656" // Senin sağ reklam birimi ID'n
+            data-ad-slot="1228692235" // Sağ reklam birimi ID'n
             data-ad-format="auto"
             data-full-width-responsive="true"
           ></ins>
