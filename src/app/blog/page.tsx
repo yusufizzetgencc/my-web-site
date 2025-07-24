@@ -6,6 +6,7 @@ import Image from "next/image";
 import { blogs as staticBlogs } from "./blog-data";
 import he from "he";
 import { FaCalendarAlt } from "react-icons/fa";
+import { motion, easeOut, easeInOut } from "framer-motion";
 
 type Blog = {
   title: string;
@@ -26,53 +27,133 @@ const BlogPage = () => {
     description: blog.description,
   }));
 
+  const containerVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        staggerChildren: 0.15,
+        duration: 0.6,
+        ease: easeOut,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: easeOut,
+      },
+    },
+    hover: {
+      scale: 1.05,
+      boxShadow: "0 8px 24px rgba(255, 255, 255, 0.1)",
+      transition: {
+        duration: 0.3,
+        ease: easeInOut,
+      },
+    },
+  };
+
   return (
-    <div className="max-w-6xl mx-auto px-4 py-16">
-      <h1 className="text-3xl font-bold mb-10 text-center">Blog Yazıları</h1>
-      <div className="grid md:grid-cols-3 gap-8">
+    <main
+      className="min-h-screen text-white py-16 px-4"
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(11, 13, 20, 0.9) 0%, rgba(31, 31, 32, 0.9) 50%, rgba(0,0,0,0.95) 100%)",
+        backdropFilter: "blur(20px)",
+      }}
+    >
+      <h1 className="mt-10 text-4xl md:text-5xl font-extrabold mb-14 text-center tracking-wide text-white">
+        Blog Yazıları
+      </h1>
+
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-stretch"
+      >
         {allBlogs.map((blog) => {
           const title = he.decode(blog.title);
           const thumbnail = he.decode(blog.thumbnail);
           const cleanContent =
-            he.decode(blog.content.replace(/<[^>]+>/g, "")).slice(0, 200) +
+            he.decode(blog.content.replace(/<[^>]+>/g, "")).slice(0, 180) +
             "...";
 
           return (
-            <Link
+            <motion.div
               key={blog.slug}
-              href={`/blog/${blog.slug}`}
-              className="bg-white rounded-xl shadow-md border hover:border-[#ffb900] transition-all overflow-hidden"
+              variants={cardVariants}
+              whileHover="hover"
+              className="cursor-pointer flex flex-col"
             >
-              {thumbnail && (
-                <Image
-                  src={thumbnail}
-                  alt={title}
-                  width={400}
-                  height={200}
-                  className="w-full h-48 object-cover"
-                />
-              )}
-              <h2 className="text-xl font-semibold px-4 pt-4 text-black">
-                {title}
-              </h2>
-              <div className="p-4 rounded">
-                <p className="text-sm text-gray-700 mt-2 flex items-center gap-2">
-                  <FaCalendarAlt className="text-[#ffb900]" />
-                  {new Date(blog.date).toLocaleDateString("tr-TR", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </p>
-                <p className="text-sm text-[#002133] mt-2 bg-[#f9f9f9] p-2 rounded line-clamp-4">
-                  {cleanContent}
-                </p>
-              </div>
-            </Link>
+              <Link
+                href={`/blog/${blog.slug}`}
+                className="bg-black/30 backdrop-blur-md rounded-xl border border-white/20 overflow-hidden
+            flex flex-col shadow-md
+            hover:border-white hover:shadow-white/40
+            transition-all duration-300 flex-grow"
+                aria-label={`Blog yazısı: ${title} detaylarını oku`}
+              >
+                {thumbnail && (
+                  <div className="relative w-full h-48 overflow-hidden rounded-t-xl flex-shrink-0">
+                    <Image
+                      src={thumbnail}
+                      alt={title}
+                      fill
+                      sizes="(min-width: 768px) 400px, 100vw"
+                      className="object-cover transition-all duration-500"
+                      priority={true}
+                    />
+                  </div>
+                )}
+                <div className="p-6 flex flex-col flex-grow min-h-[320px]">
+                  <h2 className="text-2xl font-semibold mb-3 text-white">
+                    {title}
+                  </h2>
+
+                  <div className="flex items-center text-gray-300 text-sm mb-4 space-x-2">
+                    <FaCalendarAlt className="text-gray-300" />
+                    <time dateTime={blog.date}>
+                      {new Date(blog.date).toLocaleDateString("tr-TR", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </time>
+                  </div>
+
+                  <p className="text-gray-200 flex-grow line-clamp-4 mb-6">
+                    {cleanContent}
+                  </p>
+
+                  <div className="mt-auto inline-flex items-center gap-2 text-yellow-200 font-semibold hover:text-white transition-colors">
+                    Devamını Oku
+                    <motion.span
+                      initial={{ x: 0 }}
+                      animate={{ x: [0, 5, 0] }}
+                      transition={{
+                        repeat: Infinity,
+                        duration: 1.5,
+                        ease: "easeInOut",
+                      }}
+                    >
+                      →
+                    </motion.span>
+                  </div>
+                </div>
+              </Link>
+            </motion.div>
           );
         })}
-      </div>
-    </div>
+      </motion.div>
+    </main>
   );
 };
 

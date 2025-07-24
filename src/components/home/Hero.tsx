@@ -45,12 +45,12 @@ export default function BlogHeroPage() {
   };
 
   return (
-    <main className="min-h-screen bg-black relative overflow-hidden">
+    <main className="min-h-screen bg-gray-800 relative overflow-hidden">
       {/* Hero Section */}
       <section className="mt-20 min-h-screen flex flex-col items-center justify-center relative px-6 text-center">
         {/* Dynamic Gradient Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
-          <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/70 via-transparent to-black/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-800 to-black">
+          <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/50 via-transparent to-black/40"></div>
         </div>
 
         {/* Enhanced Animated Background Elements */}
@@ -177,10 +177,10 @@ export default function BlogHeroPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-7xl md:text-8xl font-bold bg-gradient-to-r from-white via-gray-200 to-white 
+              className="text-6xl md:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-white 
                          bg-clip-text text-transparent mb-8 leading-tight"
             >
-              Blog Dünyasına
+              Kişisel Blog Sayfama
               <br />
               <motion.span
                 animate={{ scale: [1, 1.05, 1] }}
@@ -189,7 +189,7 @@ export default function BlogHeroPage() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="text-6xl md:text-7xl"
+                className="text-5xl md:text-6xl"
               >
                 Hoş Geldiniz
               </motion.span>
@@ -199,14 +199,14 @@ export default function BlogHeroPage() {
               initial={{ width: 0 }}
               animate={{ width: "8rem" }}
               transition={{ delay: 0.8, duration: 1 }}
-              className="h-1 bg-gradient-to-r from-white/80 to-gray-300/60 mx-auto rounded-full mb-8"
+              className="h-1 bg-gradient-to-r from-yellow/80 to-yellow-300/60 mx-auto rounded-full mb-8"
             ></motion.div>
 
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="text-gray-200 text-xl max-w-3xl mx-auto leading-relaxed"
+              className="text-gray-200 text-lg max-w-3xl mx-auto leading-relaxed"
             >
               Yaratıcılığın sınırlarını zorlayan, ilham dolu hikayeler ve güncel
               içeriklerle dolu dünyamıza adım atın. Her kelime bir keşif, her
@@ -223,25 +223,25 @@ export default function BlogHeroPage() {
           >
             {[
               {
-                icon: <FiPenTool className="w-6 h-6 text-white" />,
+                icon: <FiPenTool className="w-6 h-6 text-yellow-200" />,
                 title: "Yaratıcı İçerik",
                 desc: "Özgün ve ilham verici yazılar",
                 color: "from-white/20 to-gray-300/30",
               },
               {
-                icon: <FiTrendingUp className="w-6 h-6 text-white" />,
+                icon: <FiTrendingUp className="w-6 h-6 text-yellow-200" />,
                 title: "Viral Konular",
                 desc: "Dünyayı sallayan başlıklar",
                 color: "from-gray-300/25 to-white/20",
               },
               {
-                icon: <FiHeart className="w-6 h-6 text-white" />,
+                icon: <FiHeart className="w-6 h-6 text-yellow-200" />,
                 title: "Duygusal Bağ",
                 desc: "Kalbe dokunan hikayeler",
                 color: "from-white/25 to-gray-200/20",
               },
               {
-                icon: <FiUsers className="w-6 h-6 text-white" />,
+                icon: <FiUsers className="w-6 h-6 text-yellow-200" />,
                 title: "Güçlü Topluluk",
                 desc: "Binlerce aktif okuyucu",
                 color: "from-gray-200/30 to-white/25",
@@ -389,10 +389,10 @@ export default function BlogHeroPage() {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="text-white/60 text-sm flex flex-col items-center space-y-2"
+            className="text-white/70 text-sm flex flex-col items-center "
           >
-            <span>Keşfetmeye devam et</span>
-            <FiArrowDown className="w-5 h-5" />
+            <FiArrowDown className="w-4 h-4" />
+            <span className="mt-1">Keşfetmeye devam et</span>
           </motion.div>
         </motion.div>
       </section>
@@ -419,8 +419,8 @@ export default function BlogHeroPage() {
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { number: "500+", label: "Özgün Makale", icon: <FiBookOpen /> },
-              { number: "25K+", label: "Aktif Okuyucu", icon: <FiUsers /> },
+              { number: "100+", label: "Özgün Makale", icon: <FiBookOpen /> },
+              { number: "1K+", label: "Aktif Okuyucu", icon: <FiUsers /> },
               { number: "1M+", label: "Aylık Görüntüleme", icon: <FiEye /> },
               { number: "4.9★", label: "Kullanıcı Puanı", icon: <FiStar /> },
             ].map((stat, index) => (
@@ -430,8 +430,8 @@ export default function BlogHeroPage() {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="text-center bg-black/40 backdrop-blur-sm border border-gray-600/30 
-                         rounded-2xl p-8 hover:bg-black/60 hover:border-gray-500/50 transition-all duration-500"
+                className="text-center bg-black/40 backdrop-blur-sm border border-yellow-600/30 
+                         rounded-2xl p-8 hover:bg-yellow/60 hover:border-yellow-500/50 transition-all duration-500"
               >
                 <motion.div
                   animate={{ rotate: [0, 360] }}
@@ -440,8 +440,8 @@ export default function BlogHeroPage() {
                     repeat: Infinity,
                     ease: "linear",
                   }}
-                  className="w-16 h-16 bg-gradient-to-r from-white/20 to-gray-300/30 rounded-2xl 
-                           flex items-center justify-center mb-4 mx-auto text-white text-2xl"
+                  className="w-16 h-16 bg-gradient-to-r from-yellow/20 to-gray-300/30 rounded-2xl 
+                           flex items-center justify-center mb-4 mx-auto text-yellow-100/70 text-2xl"
                 >
                   {stat.icon}
                 </motion.div>
@@ -513,7 +513,7 @@ export default function BlogHeroPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2, duration: 0.6 }}
                 whileHover={{ scale: 1.03, y: -10 }}
-                className="bg-black/60 backdrop-blur-sm border border-gray-600/30 rounded-2xl p-6 
+                className="bg-black/60 backdrop-blur-sm border border-yellow-600/30 rounded-2xl p-6 
                          hover:bg-black/80 hover:border-gray-500/50 transition-all duration-500 group cursor-pointer"
               >
                 <div className="flex items-center justify-between mb-4">
@@ -521,7 +521,7 @@ export default function BlogHeroPage() {
                     {post.category}
                   </span>
                   <div className="flex items-center space-x-2 text-gray-400 text-sm">
-                    <FiClock className="w-4 h-4" />
+                    <FiClock className="w-4 h-4 text-yellow-200/50" />
                     <span>{post.readTime}</span>
                   </div>
                 </div>
@@ -550,8 +550,8 @@ export default function BlogHeroPage() {
                     whileHover={{ x: 5 }}
                     className="flex items-center space-x-1 text-white text-sm font-medium"
                   >
-                    <span>Devamını Oku</span>
-                    <FiChevronRight className="w-4 h-4" />
+                    <span className="text-yellow-200/60">Devamını Oku</span>
+                    <FiChevronRight className="w-4 h-4 text-yellow-200/60" />
                   </motion.div>
                 </div>
               </motion.div>
@@ -654,7 +654,7 @@ export default function BlogHeroPage() {
                   key={index}
                   whileHover={{ scale: 1.2, rotate: 360 }}
                   className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center 
-                           text-gray-400 hover:text-white hover:bg-white/20 transition-all duration-300"
+                           text-yellow-200 hover:text-yellow-200/50 hover:bg-white/20 transition-all duration-300"
                 >
                   <Icon className="w-5 h-5" />
                 </motion.button>

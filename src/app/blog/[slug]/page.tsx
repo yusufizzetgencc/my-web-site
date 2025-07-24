@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import he from "he";
+import Script from "next/script";
 
 declare global {
   interface Window {
@@ -65,57 +66,77 @@ export default async function Page({
   const otherBlogs = staticBlogs.filter((b) => b.slug !== slug).slice(0, 4);
 
   return (
-    <main className="mt-5 max-w-4xl mx-auto px-4 py-12 bg-white rounded-lg shadow-md">
-      <article itemScope itemType="https://schema.org/BlogPosting">
-        <header className="mb-6">
-          <Link
-            href="/blog"
-            className="inline-flex items-center text-sm text-[#002133] hover:underline"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-5 h-5 mr-2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15.75 19.5L8.25 12l7.5-7.5"
-              />
-            </svg>
-            Geri Dön
-          </Link>
-        </header>
+    <>
+      {/* Google Ads Script */}
+      <Script
+        id="adsense-script"
+        strategy="afterInteractive"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        crossOrigin="anonymous"
+      />
 
-        <div className="mb-6">
+      <main
+        className="mt-22 max-w-full mx-auto px-6 py-12 rounded-lg shadow-xl
+          grid grid-cols-1 md:grid-cols-[0.75fr_3.5fr_0.75fr] gap-8"
+        style={{
+          background: "linear-gradient(135deg, #fff 0%, #efefef 100%)",
+          color: "#000000",
+          minHeight: "100vh",
+        }}
+      >
+        {/* Sol Yan Bar */}
+        <aside className="bg-white shadow-md sticky top-20 h-fit">
           <ins
             className="adsbygoogle"
-            style={{ display: "block", textAlign: "center" }}
-            data-ad-client="ca-pub-1234567890123456"
-            data-ad-slot="1234567890"
+            style={{ display: "block" }}
+            data-ad-client="ca-pub-1731461024871182" // Senin client ID'n
+            data-ad-slot="2673851443" // Senin sol reklam birimi ID'n
             data-ad-format="auto"
             data-full-width-responsive="true"
           ></ins>
-          <script
+          <Script
+            id="adsense-left-init"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
             }}
           />
-        </div>
+        </aside>
 
-        <header className="mb-6">
-          <h1
-            itemProp="headline"
-            className="text-3xl font-bold mb-4 text-[#0f172a]"
-          >
-            {blog.title}
-          </h1>
+        {/* Orta Ana İçerik */}
+        <article
+          itemScope
+          itemType="https://schema.org/BlogPosting"
+          className="bg-white rounded-lg p-6 shadow-md"
+          style={{ color: "#000" }}
+        >
+          <header className="mb-6">
+            <Link
+              href="/blog"
+              className="inline-flex items-center text-sm text-black hover:text-gray-700 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5 mr-2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+              Geri Dön
+            </Link>
+          </header>
+
+          <h1 className="text-3xl font-extrabold mb-4">{blog.title}</h1>
 
           {blog.thumbnail && (
-            <div className="mb-6">
+            <div className="mb-6 rounded-lg overflow-hidden shadow-lg">
               <Image
                 src={blog.thumbnail}
                 alt={blog.title}
@@ -123,12 +144,12 @@ export default async function Page({
                 height={600}
                 quality={100}
                 priority
-                className="rounded-lg w-full h-auto object-contain"
+                className="w-full h-auto object-cover"
               />
             </div>
           )}
 
-          <div className="flex items-center text-sm text-[#002133] font-medium gap-6 mb-6">
+          <div className="flex items-center text-sm text-black font-medium gap-6 mb-6">
             <div className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +157,7 @@ export default async function Page({
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-4 h-4 text-[#ffb900]"
+                className="w-4 h-4 text-black"
               >
                 <path
                   strokeLinecap="round"
@@ -153,7 +174,7 @@ export default async function Page({
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-4 h-4 text-[#ffb900]"
+                className="w-4 h-4 text-black"
               >
                 <path
                   strokeLinecap="round"
@@ -172,55 +193,78 @@ export default async function Page({
               </span>
             </div>
           </div>
-        </header>
 
-        <section>
-          <div
-            itemProp="articleBody"
-            className="text-base leading-relaxed text-[#002133] [&_h1]:text-3xl [&_h2]:text-2xl [&_h3]:text-xl [&_ul]:list-disc [&_li]:ml-5 [&_strong]:font-semibold [&_a]:text-blue-600 [&_a:hover]:underline"
-            dangerouslySetInnerHTML={{ __html: he.decode(blog.content) }}
+          <section>
+            <div
+              itemProp="articleBody"
+              className="text-base leading-relaxed text-gray-700
+                [&_h1]:text-3xl [&_h2]:text-2xl [&_h3]:text-xl
+                [&_ul]:list-disc [&_li]:ml-5
+                [&_strong]:font-semibold
+                [&_a]:text-blue-600 [&_a:hover]:underline"
+              dangerouslySetInnerHTML={{ __html: he.decode(blog.content) }}
+            />
+          </section>
+
+          <section className="mt-16 bg-gray-100 p-8 rounded-lg shadow-inner">
+            <h2 className="text-2xl font-semibold mb-6 text-black">
+              Diğer Bloglar
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {otherBlogs.map((item) => (
+                <Link
+                  key={item.slug}
+                  href={`/blog/${item.slug}`}
+                  className="block border border-gray-300 rounded-lg overflow-hidden hover:shadow-blue-500/40 transition duration-300 bg-white"
+                >
+                  {item.thumbnail && (
+                    <Image
+                      src={item.thumbnail}
+                      alt={item.title}
+                      width={600}
+                      height={300}
+                      className="object-cover w-full h-40"
+                    />
+                  )}
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold text-black">
+                      {item.title.length > 60
+                        ? item.title.slice(0, 60) + "..."
+                        : item.title}
+                    </h3>
+                    <p className="text-sm text-gray-500 mt-2">
+                      {new Date(item.createdAt).toLocaleDateString("tr-TR", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        </article>
+
+        {/* Sağ Yan Bar */}
+        <aside className="bg-white shadow-md sticky top-20 h-fit">
+          <ins
+            className="adsbygoogle"
+            style={{ display: "block" }}
+            data-ad-client="ca-pub-1731461024871182" // Senin client ID'n
+            data-ad-slot="9088139656" // Senin sağ reklam birimi ID'n
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+          <Script
+            id="adsense-right-init"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+            }}
           />
-        </section>
-
-        <section className="mt-16 bg-[#f3f4f6] p-8 rounded-lg">
-          <h2 className="text-2xl font-semibold mb-6 text-[#0f172a]">
-            Diğer Bloglar
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {otherBlogs.map((item) => (
-              <Link
-                key={item.slug}
-                href={`/blog/${item.slug}`}
-                className="block border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition duration-300 bg-white"
-              >
-                {item.thumbnail && (
-                  <Image
-                    src={item.thumbnail}
-                    alt={item.title}
-                    width={600}
-                    height={300}
-                    className="object-cover w-full h-40"
-                  />
-                )}
-                <div className="p-4">
-                  <h3 className="text-lg font-bold text-[#0f172a]">
-                    {item.title.length > 60
-                      ? item.title.slice(0, 60) + "..."
-                      : item.title}
-                  </h3>
-                  <p className="text-sm text-gray-500 mt-2">
-                    {new Date(item.createdAt).toLocaleDateString("tr-TR", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      </article>
-    </main>
+        </aside>
+      </main>
+    </>
   );
 }
