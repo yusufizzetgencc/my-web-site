@@ -3,7 +3,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <main className="pt-24 px-4 sm:px-8 bg-gradient-to-b from-white to-gray-100 min-h-screen">
+    <main className="bg-gradient-to-b from-white to-gray-100 min-h-screen w-full">
       <Hero />
     </main>
   );
